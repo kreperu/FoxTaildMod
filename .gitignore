@@ -120,3 +120,6 @@ run/
 /.idea/
 /build/
 /src/test/
+/.gradle/
+/.idea/
+/build/
