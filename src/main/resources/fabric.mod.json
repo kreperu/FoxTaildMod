@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "player-renderer-fun-idk",
+  "version": "${version}",
+
+  "name": "Player Renderer Fun Idk",
+  "description": "Just having fun with changing the player's model",
+  "authors": [
+    "NayFeex"
+  ],
+  "contact": {
+    "website": "https://github.com/kreperu",
+    "repo": "https://github.com/kreperu/PlayerModelSomething-FabricMC.git"
+  },
+
+  "license": "MIT",
+  "icon": "assets/player-renderer-fun-idk/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.nayfeex.playerrendererfunidk.client.PlayerRendererFunIdkClient"
+    ],
+    "main": [
+      "me.nayfeex.playerrendererfunidk.PlayerRendererFunIdk"
+    ]
+  },
+
+          "mixins": [
+        "player-renderer-fun-idk.mixins.json"
+      ],
+    
+  "depends": {
+    "fabricloader": ">=0.14.9",
+              "fabric": "*",
+          "minecraft": "1.19"
+  }
+}
