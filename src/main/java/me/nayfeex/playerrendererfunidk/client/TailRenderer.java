@@ -53,6 +53,7 @@ public class TailRenderer extends FeatureRenderer<AbstractClientPlayerEntity, Pl
     private float angle = 50;
     private float rot = 0;
     private boolean en = false;
+    private boolean inv = false;
     private int i = 0;
 
     @Override
@@ -96,11 +97,21 @@ public class TailRenderer extends FeatureRenderer<AbstractClientPlayerEntity, Pl
         angle = (float) (Math.sin(entity.world.getTime() * (((10 * TailSemiBlock.wind) / 50) / (10 * TailSemiBlock.wind))) * (10.0F * TailSemiBlock.wind));
         if(entity.prevBodyYaw - entity.bodyYaw > 0) {
             en = true;
-            i = 100;
+            inv = false;
+            i = 40;
+        }
+        if(entity.prevBodyYaw - entity.bodyYaw < 0) {
+            en = true;
+            inv = true;
+            i = 40;
         }
         if(en) {
             if(i > 1) {
-                angle = angle + (i / 10);
+                if(inv) {
+                    angle = angle - (i / 4);
+                } else {
+                    angle = angle + (i / 4);
+                }
                 i--;
             } else {
                 en = false;
