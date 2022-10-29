@@ -7,3 +7,5 @@ Maybe one day there will be way to config which players have the tails.
 It is also possible to scale the tail using the "Fox" button in player's survival inventory.
 
 You can find the mod jar in the "release" branch.
+
+Ps. The code is probably awful
