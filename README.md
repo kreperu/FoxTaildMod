@@ -8,4 +8,4 @@ It is also possible to scale the tail using the "Fox" button in player's surviva
 
 You can find the mod jar in the "release" branch.
 
-The code is probably awful
+The code is awful
